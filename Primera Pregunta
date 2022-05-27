@@ -1,0 +1,10 @@
+
+import numpy as np
+from scipy import integrate
+from scipy.special import erf
+
+func = lambda x: (x**2)*(np.exp(-x))
+
+  
+
+print(integrate.romberg(func, a= 0,  b= 1, show = True))
